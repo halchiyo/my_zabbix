@@ -42,3 +42,15 @@ vi /etc/snmp/snmptt.ini
 10	>>	Information	 [Character string not included]
 
 
+When you want to use BAD pattern "Template_SNMPTrap-Generic_bad_pattern.xml", You need follows...
+
+@snmptrap.average
+1	>>	Minor	 [Character string included]
+@snmptrap.disaster	
+1	>>	Critical	 [Character string included]
+@snmptrap.high	
+1	>>	Major	 [Character string included]
+@snmptrap.information	
+1	>>	Normal	 [Character string included]
+@snmptrap.warning	
+1	>>	Warning "	 [Character string included]

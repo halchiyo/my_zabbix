@@ -18,12 +18,12 @@
             </groups>
             <applications>
                 <application>
-                    <name>SNMP Trap - Generic_bad_trigger</name>
+                    <name>SNMP Trap - Generic BAD pattern</name>
                 </application>
             </applications>
             <items>
                 <item>
-                    <name>SNMPTrap-Generic</name>
+                    <name>SNMP trap -Generic</name>
                     <type>17</type>
                     <snmp_community></snmp_community>
                     <multiplier>0</multiplier>
@@ -56,7 +56,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>SNMP Trap - Generic_bad_trigger</name>
+                            <name>SNMP Trap - Generic BAD pattern</name>
                         </application>
                     </applications>
                     <valuemap/>
