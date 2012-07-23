@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Template_SNMPTrap-Generic</template>
-            <name>Template_SNMPTrap-Generic</name>
+            <template>Template SNMP Trap Generic</template>
+            <name>Template SNMP Trap Generic</name>
             <groups>
                 <group>
                     <name>Templates</name>
@@ -265,7 +265,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template_SNMPTrap-Generic:snmptrap[ Minor &quot;Generic&quot; ].regexp(.*)}=1</expression>
+            <expression>{Template SNMP Trap Generic:snmptrap[ Minor &quot;Generic&quot; ].regexp(.*)}=1</expression>
             <name>{HOSTNAME} : Average SNMP Trap Detected ! : {ITEM.VALUE}</name>
             <url></url>
             <status>0</status>
@@ -275,7 +275,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template_SNMPTrap-Generic:snmptrap[ Critical &quot;Generic&quot; ].regexp(.*)}=1</expression>
+            <expression>{Template SNMP Trap Generic:snmptrap[ Critical &quot;Generic&quot; ].regexp(.*)}=1</expression>
             <name>{HOSTNAME} : Disaster SNMP Trap Detected ! : {ITEM.VALUE}</name>
             <url></url>
             <status>0</status>
@@ -285,7 +285,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template_SNMPTrap-Generic:snmptrap[ Major &quot;Generic&quot; ].regexp(.*)}=1</expression>
+            <expression>{Template SNMP Trap Generic:snmptrap[ Major &quot;Generic&quot; ].regexp(.*)}=1</expression>
             <name>{HOSTNAME} : High SNMP Trap Detected ! : {ITEM.VALUE}</name>
             <url></url>
             <status>0</status>
@@ -295,7 +295,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template_SNMPTrap-Generic:snmptrap[ Normal &quot;Generic&quot; ].regexp(.*)}=1</expression>
+            <expression>{Template SNMP Trap Generic:snmptrap[ Normal &quot;Generic&quot; ].regexp(.*)}=1</expression>
             <name>{HOSTNAME} : Information SNMP Trap Detected ! : {ITEM.VALUE}</name>
             <url></url>
             <status>0</status>
@@ -305,7 +305,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template_SNMPTrap-Generic:snmptrap[&quot;Generic&quot;].regexp(@snmptrap.other)}=1</expression>
+            <expression>{Template SNMP Trap Generic:snmptrap[&quot;Generic&quot;].regexp(@snmptrap.other)}=1</expression>
             <name>{HOSTNAME} : SNMP Trap Detected ! : {ITEM.VALUE}</name>
             <url></url>
             <status>1</status>
@@ -315,7 +315,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template_SNMPTrap-Generic:snmptrap[ Warning &quot;Generic&quot; ].regexp(.*)}=1</expression>
+            <expression>{Template SNMP Trap Generic:snmptrap[ Warning &quot;Generic&quot; ].regexp(.*)}=1</expression>
             <name>{HOSTNAME} : Warning SNMP Trap Detected ! : {ITEM.VALUE}</name>
             <url></url>
             <status>0</status>

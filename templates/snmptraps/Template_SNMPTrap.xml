@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Template_SNMPTrap</template>
-            <name>Template_SNMPTrap</name>
+            <template>Template SNMP Trap</template>
+            <name>Template SNMP Trap</name>
             <groups>
                 <group>
                     <name>Templates</name>
