@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Template SNMP Trap</template>
-            <name>Template SNMP Trap</name>
+            <template>Template SNMP trap</template>
+            <name>Template SNMP trap</name>
             <groups>
                 <group>
                     <name>Templates</name>
@@ -18,12 +18,12 @@
             </groups>
             <applications>
                 <application>
-                    <name>SNMP Trap</name>
+                    <name>SNMP trap</name>
                 </application>
             </applications>
             <items>
                 <item>
-                    <name>All SNMP Trap</name>
+                    <name>All SNMP trap (for TEST item)</name>
                     <type>17</type>
                     <snmp_community></snmp_community>
                     <multiplier>0</multiplier>
@@ -56,13 +56,13 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>SNMP Trap</name>
+                            <name>SNMP trap</name>
                         </application>
                     </applications>
                     <valuemap/>
                 </item>
                 <item>
-                    <name>SNMP Trap fallback</name>
+                    <name>SNMP trap fallback</name>
                     <type>17</type>
                     <snmp_community></snmp_community>
                     <multiplier>0</multiplier>
@@ -95,7 +95,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>SNMP Trap</name>
+                            <name>SNMP trap</name>
                         </application>
                     </applications>
                     <valuemap/>

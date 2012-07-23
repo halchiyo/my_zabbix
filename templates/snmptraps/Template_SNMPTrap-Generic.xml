@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Template SNMP Trap Generic</template>
-            <name>Template SNMP Trap Generic</name>
+            <template>Template SNMP trap Generic</template>
+            <name>Template SNMP trap Generic</name>
             <groups>
                 <group>
                     <name>Templates</name>
@@ -18,12 +18,12 @@
             </groups>
             <applications>
                 <application>
-                    <name>SNMP Trap - Generic</name>
+                    <name>SNMP trap - Generic</name>
                 </application>
             </applications>
             <items>
                 <item>
-                    <name>SNMPTrap-Generic</name>
+                    <name>SNMP Trap - Generic</name>
                     <type>17</type>
                     <snmp_community></snmp_community>
                     <multiplier>0</multiplier>
@@ -56,13 +56,13 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>SNMP Trap - Generic</name>
+                            <name>SNMP trap - Generic</name>
                         </application>
                     </applications>
                     <valuemap/>
                 </item>
                 <item>
-                    <name>SNMPTrap-Generic.Critical</name>
+                    <name>SNMP Trap - Generic.Critical</name>
                     <type>17</type>
                     <snmp_community></snmp_community>
                     <multiplier>0</multiplier>
@@ -95,13 +95,13 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>SNMP Trap - Generic</name>
+                            <name>SNMP trap - Generic</name>
                         </application>
                     </applications>
                     <valuemap/>
                 </item>
                 <item>
-                    <name>SNMPTrap-Generic.Major</name>
+                    <name>SNMP Trap - Generic.Major</name>
                     <type>17</type>
                     <snmp_community></snmp_community>
                     <multiplier>0</multiplier>
@@ -134,13 +134,13 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>SNMP Trap - Generic</name>
+                            <name>SNMP trap - Generic</name>
                         </application>
                     </applications>
                     <valuemap/>
                 </item>
                 <item>
-                    <name>SNMPTrap-Generic.Minor</name>
+                    <name>SNMP Trap - Generic.Minor</name>
                     <type>17</type>
                     <snmp_community></snmp_community>
                     <multiplier>0</multiplier>
@@ -173,13 +173,13 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>SNMP Trap - Generic</name>
+                            <name>SNMP trap - Generic</name>
                         </application>
                     </applications>
                     <valuemap/>
                 </item>
                 <item>
-                    <name>SNMPTrap-Generic.Normal</name>
+                    <name>SNMP Trap - Generic.Normal</name>
                     <type>17</type>
                     <snmp_community></snmp_community>
                     <multiplier>0</multiplier>
@@ -212,13 +212,13 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>SNMP Trap - Generic</name>
+                            <name>SNMP trap - Generic</name>
                         </application>
                     </applications>
                     <valuemap/>
                 </item>
                 <item>
-                    <name>SNMPTrap-Generic.Warning</name>
+                    <name>SNMP Trap - Generic.Warning</name>
                     <type>17</type>
                     <snmp_community></snmp_community>
                     <multiplier>0</multiplier>
@@ -251,7 +251,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>SNMP Trap - Generic</name>
+                            <name>SNMP trap - Generic</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -265,8 +265,8 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template SNMP Trap Generic:snmptrap[ Minor &quot;Generic&quot; ].regexp(.*)}=1</expression>
-            <name>{HOSTNAME} : Average SNMP Trap Detected ! : {ITEM.VALUE}</name>
+            <expression>{Template SNMP trap Generic:snmptrap[ Minor &quot;Generic&quot; ].regexp(.*)}=1</expression>
+            <name>{HOSTNAME} : Average SNMP trap Detected ! : {ITEM.VALUE}</name>
             <url></url>
             <status>0</status>
             <priority>3</priority>
@@ -275,8 +275,8 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template SNMP Trap Generic:snmptrap[ Critical &quot;Generic&quot; ].regexp(.*)}=1</expression>
-            <name>{HOSTNAME} : Disaster SNMP Trap Detected ! : {ITEM.VALUE}</name>
+            <expression>{Template SNMP trap Generic:snmptrap[ Critical &quot;Generic&quot; ].regexp(.*)}=1</expression>
+            <name>{HOSTNAME} : Disaster SNMP trap Detected ! : {ITEM.VALUE}</name>
             <url></url>
             <status>0</status>
             <priority>5</priority>
@@ -285,8 +285,8 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template SNMP Trap Generic:snmptrap[ Major &quot;Generic&quot; ].regexp(.*)}=1</expression>
-            <name>{HOSTNAME} : High SNMP Trap Detected ! : {ITEM.VALUE}</name>
+            <expression>{Template SNMP trap Generic:snmptrap[ Major &quot;Generic&quot; ].regexp(.*)}=1</expression>
+            <name>{HOSTNAME} : High SNMP trap Detected ! : {ITEM.VALUE}</name>
             <url></url>
             <status>0</status>
             <priority>4</priority>
@@ -295,8 +295,8 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template SNMP Trap Generic:snmptrap[ Normal &quot;Generic&quot; ].regexp(.*)}=1</expression>
-            <name>{HOSTNAME} : Information SNMP Trap Detected ! : {ITEM.VALUE}</name>
+            <expression>{Template SNMP trap Generic:snmptrap[ Normal &quot;Generic&quot; ].regexp(.*)}=1</expression>
+            <name>{HOSTNAME} : Information SNMP trap Detected ! : {ITEM.VALUE}</name>
             <url></url>
             <status>0</status>
             <priority>1</priority>
@@ -305,8 +305,8 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template SNMP Trap Generic:snmptrap[&quot;Generic&quot;].regexp(@snmptrap.other)}=1</expression>
-            <name>{HOSTNAME} : SNMP Trap Detected ! : {ITEM.VALUE}</name>
+            <expression>{Template SNMP trap Generic:snmptrap[&quot;Generic&quot;].regexp(@snmptrap.other)}=1</expression>
+            <name>{HOSTNAME} : SNMP trap Detected ! : {ITEM.VALUE}</name>
             <url></url>
             <status>1</status>
             <priority>0</priority>
@@ -315,8 +315,8 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template SNMP Trap Generic:snmptrap[ Warning &quot;Generic&quot; ].regexp(.*)}=1</expression>
-            <name>{HOSTNAME} : Warning SNMP Trap Detected ! : {ITEM.VALUE}</name>
+            <expression>{Template SNMP trap Generic:snmptrap[ Warning &quot;Generic&quot; ].regexp(.*)}=1</expression>
+            <name>{HOSTNAME} : Warning SNMP trap Detected ! : {ITEM.VALUE}</name>
             <url></url>
             <status>0</status>
             <priority>2</priority>
